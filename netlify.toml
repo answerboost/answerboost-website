@@ -1,7 +1,17 @@
+[build]
+  publish = "."
+
 [[headers]]
   for = "/*"
   [headers.values]
     X-Robots-Tag = "index, follow"
 
-[build]
-  publish = "."
+[[redirects]]
+  from = "/privacy-policy"
+  to = "/privacy-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/terms"
+  to = "/terms.html"
+  status = 200
