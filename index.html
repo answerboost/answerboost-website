@@ -195,6 +195,7 @@ footer{background:#060d16;padding:32px 5%}
 </style>
 </head>
 <body>
+<div id="page-home">
 
 <!-- NAV -->
 <nav>
@@ -453,7 +454,7 @@ footer{background:#060d16;padding:32px 5%}
   <p>We'll show you AnswerBoost recovering a missed call live.</p>
   <div class="cta-btns">
     <a href="https://calendar.app.google/WQ7ajJYqh1eeYtC48" target="_blank" class="btn-gold">Book a Free Demo →</a>
-    <a href="mailto:hello@getanswerboost.com" style="color:rgba(255,255,255,0.5);font-size:14px;display:flex;align-items:center;text-decoration:none">hello@getanswerboost.com</a>
+    <a href="/cdn-cgi/l/email-protection#ee868b828281ae898b9a8f809d998b9c8c81819d9ac08d8183" style="color:rgba(255,255,255,0.5);font-size:14px;display:flex;align-items:center;text-decoration:none"><span class="__cf_email__" data-cfemail="533b363f3f3c13343627323d20243621313c3c20277d303c3e">[email&#160;protected]</span></a>
   </div>
   <div class="cta-note">No contracts. No setup risk. Cancel anytime.</div>
 </section>
@@ -461,11 +462,11 @@ footer{background:#060d16;padding:32px 5%}
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-left">© 2026 <strong>Geminus Holdings LLC</strong> dba AnswerBoost · Dallas, TX · hello@getanswerboost.com</div>
+    <div class="footer-left">© 2026 <strong>Geminus Holdings LLC</strong> dba AnswerBoost · Dallas, TX · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f098959c9c9fb0979584919e83879582929f9f8384de939f9d">[email&#160;protected]</a></div>
     <div class="footer-links">
       <a href="/privacy-policy">Privacy Policy</a>
       <a href="/terms">Terms of Service</a>
-      <a href="mailto:hello@getanswerboost.com">Contact</a>
+      <a href="/cdn-cgi/l/email-protection#422a272e2e2d02252736232c31352730202d2d31366c212d2f">Contact</a>
     </div>
   </div>
 </footer>
@@ -477,6 +478,7 @@ footer{background:#060d16;padding:32px 5%}
     <button class="cookie-decline" onclick="document.getElementById('cookie-banner').style.display='none'">Decline</button>
     <button class="cookie-accept" onclick="document.getElementById('cookie-banner').style.display='none'">Accept</button>
   </div>
+</div>
 </div>
 
 <!-- PRIVACY POLICY PAGE -->
@@ -524,14 +526,14 @@ footer{background:#060d16;padding:32px 5%}
   <h2>6. Cookies</h2>
   <p>We use cookies to analyze traffic and improve our website. You may disable cookies through your browser settings. We use Google Analytics for anonymous usage statistics.</p>
   <h2>7. Your Rights</h2>
-  <p>Depending on your location, you may have the right to access, correct, or delete your personal information. Contact us at hello@getanswerboost.com. California residents may have additional rights under CCPA.</p>
+  <p>Depending on your location, you may have the right to access, correct, or delete your personal information. Contact us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="96fef3fafaf9d6f1f3e2f7f8e5e1f3e4f4f9f9e5e2b8f5f9fb">[email&#160;protected]</a>. California residents may have additional rights under CCPA.</p>
   <h2>8. Children's Privacy</h2>
   <p>Our services are not directed to individuals under 18. We do not knowingly collect information from minors.</p>
   <h2>9. Changes to This Policy</h2>
   <p>We may update this Privacy Policy periodically. Continued use of our services constitutes acceptance of any changes.</p>
   <div class="legal-contact">
     <h2>Contact Us</h2>
-    <p>Geminus Holdings LLC dba AnswerBoost<br>Email: hello@getanswerboost.com<br>Website: getanswerboost.com<br>Dallas, Texas</p>
+    <p>Geminus Holdings LLC dba AnswerBoost<br>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="274f424b4b486740425346495450425545484854530944484a">[email&#160;protected]</a><br>Website: getanswerboost.com<br>Dallas, Texas</p>
   </div>
 </div>
 </div>
@@ -568,12 +570,12 @@ footer{background:#060d16;padding:32px 5%}
   <p>We reserve the right to modify these Terms at any time. Continued use of our services after changes constitutes acceptance.</p>
   <div class="legal-contact">
     <h2>Contact Us</h2>
-    <p>Geminus Holdings LLC dba AnswerBoost<br>Email: hello@getanswerboost.com<br>Website: getanswerboost.com<br>Dallas, Texas</p>
+    <p>Geminus Holdings LLC dba AnswerBoost<br>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c1a9a4adadae81a6a4b5a0afb2b6a4b3a3aeaeb2b5efa2aeac">[email&#160;protected]</a><br>Website: getanswerboost.com<br>Dallas, Texas</p>
   </div>
 </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function showPage(page) {
   var home = document.getElementById('page-home');
   var privacy = document.getElementById('page-privacy');
@@ -598,14 +600,13 @@ function showPage(page) {
 
 function router() {
   var path = window.location.pathname;
-  if(path === '/privacy-policy' || path === '/privacy-policy.html' || path === '/privacy-policy/')  {
+  if(path === '/privacy-policy' || path === '/privacy-policy.html' || path === '/privacy-policy/') {
     showPage('privacy');
-   } else if(path === '/terms' || path === '/terms.html' || path === '/terms/') {
+  } else if(path === '/terms' || path === '/terms.html' || path === '/terms/') {
     showPage('terms');
   }
 }
 
-// Update all privacy/terms links to use JS routing
 document.addEventListener('DOMContentLoaded', function() {
   router();
   document.querySelectorAll('a[href="/privacy-policy"], a[href="/privacy-policy.html"]').forEach(function(a) {
