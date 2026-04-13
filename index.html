@@ -580,6 +580,18 @@ function showPage(page) {
   var home = document.getElementById('page-home');
   var privacy = document.getElementById('page-privacy');
   var terms = document.getElementById('page-terms');
+  function submitOptinForm(e) {
+      e.preventDefault();
+      var name = document.getElementById('optin-name').value;
+      var email = document.getElementById('optin-email').value;
+      var consent = document.getElementById('sms-consent').checked;
+      if (!name || !email) { alert('Please fill in your name and email.'); return; }
+      if (!consent) { alert('Please check the SMS consent box to continue.'); return; }
+      var btn = e.target;
+      btn.textContent = 'Submitted! We will be in touch.';
+      btn.style.background = '#0fbf8a';
+      btn.disabled = true;
+  }
   if(page === 'privacy') {
     if(home) home.style.display = 'none';
     privacy.style.display = 'block';
