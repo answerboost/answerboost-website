@@ -521,6 +521,7 @@ footer{background:#060d16;padding:32px 5%}
   <p>AnswerBoost operates automated SMS systems on behalf of our business clients. End-consumers who receive SMS messages through our platform have called the client business first — their inbound call constitutes consent to receive a single follow-up text message.</p>
   <p>Every SMS sent through our platform includes opt-out instructions. Recipients may reply STOP at any time to immediately unsubscribe. Message and data rates may apply.</p>
   <p><strong>We do not share mobile phone numbers or SMS consent data with third parties for marketing or promotional purposes.</strong></p>
+  <p>All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
   <h2>5. Sharing of Information</h2>
   <p>We do not sell your personal information. We may share information with service providers including Telnyx (SMS delivery), Make.com (automation), and OpenAI (AI responses) who process data under confidentiality agreements, or when required by law.</p>
   <h2>6. Cookies</h2>
@@ -586,7 +587,6 @@ function showPage(page) {
       var email = document.getElementById('optin-email').value;
       var consent = document.getElementById('sms-consent').checked;
       if (!name || !email) { alert('Please fill in your name and email.'); return; }
-      if (!consent) { alert('Please check the SMS consent box to continue.'); return; }
       var btn = e.target;
       btn.textContent = 'Submitted! We will be in touch.';
       btn.style.background = '#0fbf8a';
