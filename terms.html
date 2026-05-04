@@ -1,244 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service | AnswerBoost</title>
-<meta name="description" content="AnswerBoost Terms of Service — the agreement between you and Geminus Holdings LLC governing use of our missed call text-back automation platform.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://getanswerboost.com/terms">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://getanswerboost.com/terms">
-<meta property="og:title" content="Terms of Service | AnswerBoost">
-<meta property="og:site_name" content="AnswerBoost">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --navy:#0b1929;--navy-mid:#112240;
-  --gold:#f5a623;--teal:#0fbf8a;
-  --white:#ffffff;--gray-100:#f4f6f9;--gray-400:#9aa5b4;--gray-600:#4a5568;--gray-800:#1a202c;
-  --font-display:'Syne',sans-serif;--font-body:'DM Sans',sans-serif;
-  --radius:12px;
-}
-body{font-family:var(--font-body);background:var(--gray-100);color:var(--gray-800);line-height:1.6;overflow-x:hidden;min-height:100vh;display:flex;flex-direction:column}
-a{text-decoration:none;color:inherit}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service | AnswerBoost</title>
+  <meta name="description" content="Terms of Service for AnswerBoost by Geminus Holdings LLC." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-nav{position:sticky;top:0;z-index:100;padding:0 5%;height:70px;display:flex;align-items:center;justify-content:space-between;background:rgba(11,25,41,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.06)}
-.nav-logo{display:flex;align-items:center;gap:10px}
-.nav-logo img{height:52px;width:auto;display:block}
-.nav-back{font-size:14px;color:rgba(255,255,255,0.6);transition:color 0.2s;display:flex;align-items:center;gap:6px}
-.nav-back:hover{color:var(--teal)}
-.nav-cta{background:var(--gold);color:var(--navy);font-family:var(--font-display);font-size:13px;font-weight:700;padding:10px 22px;border-radius:100px}
+    :root {
+      --bg: #0d0f12;
+      --surface: #141720;
+      --border: #1e2330;
+      --accent: #00c896;
+      --accent-dim: rgba(0,200,150,0.12);
+      --text: #e8eaf0;
+      --muted: #7a8299;
+      --heading: #ffffff;
+    }
 
-main{flex:1;padding:60px 5% 80px}
-.legal-wrap{max-width:760px;margin:0 auto}
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 16px;
+    }
 
-.page-label{font-size:12px;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px}
-.legal-wrap h1{font-family:var(--font-display);font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--navy);letter-spacing:-1px;margin-bottom:8px}
-.legal-meta{font-size:13px;color:var(--gray-400);margin-bottom:48px}
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 40px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(13,15,18,0.92);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+    }
+    .nav-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      color: var(--heading);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--accent); }
+    nav a.nav-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a.nav-link:hover { color: var(--accent); }
 
-.toc{background:var(--white);border-radius:var(--radius);padding:24px 28px;margin-bottom:48px;border:1px solid #e2e8f0}
-.toc-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--gray-400);margin-bottom:12px;font-family:var(--font-display)}
-.toc ol{padding-left:18px;display:flex;flex-direction:column;gap:6px}
-.toc ol li a{font-size:14px;color:var(--teal);font-weight:500}
-.toc ol li a:hover{text-decoration:underline}
+    .page-header {
+      background: linear-gradient(135deg, #0d0f12 0%, #131a1f 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 64px 40px 48px;
+      text-align: center;
+    }
+    .page-header .badge {
+      display: inline-block;
+      background: var(--accent-dim);
+      color: var(--accent);
+      border: 1px solid rgba(0,200,150,0.3);
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      margin-bottom: 20px;
+    }
+    .page-header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(32px, 5vw, 52px);
+      color: var(--heading);
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+    .page-header p { color: var(--muted); font-size: 15px; }
 
-.section{margin-bottom:48px;scroll-margin-top:90px}
-.section h2{font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid #e2e8f0}
-.section h3{font-size:15px;font-weight:700;color:var(--navy);margin:20px 0 8px}
-.section p{font-size:15px;color:var(--gray-600);line-height:1.8;margin-bottom:12px}
-.section p:last-child{margin-bottom:0}
-.section ul{padding-left:20px;margin-bottom:12px;display:flex;flex-direction:column;gap:6px}
-.section li{font-size:15px;color:var(--gray-600);line-height:1.7}
-.section a{color:var(--teal);font-weight:500}
-.section a:hover{text-decoration:underline}
-.section strong{color:var(--navy)}
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
 
-.warning{background:#fff8ed;border:1px solid rgba(245,166,35,0.3);border-radius:10px;padding:16px 20px;margin-bottom:16px}
-.warning p{color:#92400e;margin:0;font-size:14px;font-weight:500}
+    /* SMS CRITICAL BOX */
+    .sms-critical {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      padding: 28px 32px;
+      margin-bottom: 48px;
+    }
+    .sms-critical .label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .sms-critical h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      color: var(--heading);
+      margin-bottom: 16px;
+    }
+    .sms-critical p { font-size: 15px; color: var(--text); margin-bottom: 10px; }
+    .sms-critical p:last-child { margin-bottom: 0; }
+    .sms-critical .keywords {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+    .kw-chip {
+      background: var(--accent-dim);
+      border: 1px solid rgba(0,200,150,0.3);
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+    }
+    .kw-label {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 6px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .kw-group { margin-top: 16px; }
 
-.contact-box{background:var(--navy);border-radius:var(--radius);padding:28px 32px;margin-top:48px}
-.contact-box h2{font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--gold);margin-bottom:12px;border:none;padding:0}
-.contact-box p{color:rgba(255,255,255,0.7);font-size:15px;margin-bottom:6px}
-.contact-box a{color:var(--teal)}
+    .section {
+      margin-bottom: 44px;
+      padding-bottom: 44px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section:last-of-type { border-bottom: none; }
 
-footer{background:#060d16;padding:24px 5%;text-align:center}
-.footer-legal{font-size:13px;color:rgba(255,255,255,0.28);line-height:1.8}
-.footer-legal a{color:rgba(255,255,255,0.45);margin:0 8px;transition:color 0.2s}
-.footer-legal a:hover{color:rgba(255,255,255,0.8)}
+    .section-number {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 24px;
+      color: var(--heading);
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+    .section p { color: var(--text); margin-bottom: 12px; }
+    .section p:last-child { margin-bottom: 0; }
+    .section p.caps {
+      font-size: 13px;
+      letter-spacing: 0.02em;
+      color: var(--muted);
+      line-height: 1.6;
+    }
 
-@media(max-width:600px){
-  main{padding:40px 20px 60px}
-  .toc{padding:18px 20px}
-  .nav-cta{display:none}
-}
-</style>
+    ul.styled {
+      list-style: none;
+      margin: 12px 0;
+      padding: 0;
+    }
+    ul.styled li {
+      padding: 6px 0 6px 22px;
+      position: relative;
+      color: var(--text);
+      font-size: 15px;
+    }
+    ul.styled li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 13px;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .contact-card a { color: var(--accent); text-decoration: none; }
+    .contact-card a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 40px;
+      text-align: center;
+    }
+    footer p { color: var(--muted); font-size: 13px; }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      nav { padding: 14px 20px; }
+      .page-header { padding: 48px 20px 36px; }
+      .container { padding: 40px 20px 80px; }
+      footer { padding: 24px 20px; }
+    }
+  </style>
 </head>
 <body>
 
 <nav>
-  <a href="/" class="nav-logo">
-    <img src="/logo.png" alt="AnswerBoost">
-  </a>
-  <a href="/" class="nav-back">← Back to Home</a>
-  <a href="https://calendar.app.google/WQ7ajJYqh1eeYtC48" target="_blank" class="nav-cta">Book a Demo</a>
+  <a href="/" class="nav-logo">Answer<span>Boost</span></a>
+  <a href="/" class="nav-link">← Back to Home</a>
 </nav>
 
-<main>
-  <div class="legal-wrap">
+<div class="page-header">
+  <div class="badge">Legal</div>
+  <h1>Terms of Service</h1>
+  <p>getanswerboost.com &nbsp;·&nbsp; Last Updated: May 2026</p>
+</div>
 
-    <div class="page-label">Legal</div>
-    <h1>Terms of Service</h1>
-    <p class="legal-meta">Geminus Holdings LLC dba AnswerBoost &nbsp;·&nbsp; Last updated: April 29, 2026</p>
+<div class="container">
 
-    <nav class="toc" aria-label="Contents">
-      <div class="toc-title">Contents</div>
-      <ol>
-        <li><a href="#s1">Acceptance of Terms</a></li>
-        <li><a href="#s2">Description of Services</a></li>
-        <li><a href="#s3">SMS Platform and 10DLC Compliance</a></li>
-        <li><a href="#s4">Account Responsibilities</a></li>
-        <li><a href="#s5">Acceptable Use</a></li>
-        <li><a href="#s6">Payment and Billing</a></li>
-        <li><a href="#s7">Cancellation and Refunds</a></li>
-        <li><a href="#s8">Intellectual Property</a></li>
-        <li><a href="#s9">Disclaimer of Warranties</a></li>
-        <li><a href="#s10">Limitation of Liability</a></li>
-        <li><a href="#s11">Indemnification</a></li>
-        <li><a href="#s12">Governing Law</a></li>
-        <li><a href="#s13">Changes to Terms</a></li>
-        <li><a href="#s14">Contact</a></li>
-      </ol>
-    </nav>
+  <!-- SMS PROGRAM DISCLOSURE — CTIA Required -->
+  <div class="sms-critical">
+    <div class="label">SMS Messaging Program</div>
+    <h2>AnswerBoost Missed Call Recovery — Text Messaging Terms</h2>
+    <p><strong>Program Name:</strong> AnswerBoost Missed Call Recovery</p>
+    <p><strong>Program Description:</strong> When an individual calls a business that uses the AnswerBoost platform and does not receive an answer, AnswerBoost automatically sends an SMS text message to that caller on behalf of the business. Messages are used to identify the business, offer assistance, and facilitate appointment booking. Messages are sent by Geminus Holdings LLC dba AnswerBoost on behalf of its business clients.</p>
+    <p><strong>Message and data rates may apply.</strong> Message frequency varies based on inbound call volume.</p>
+    <p>For support: <a href="mailto:hello@getanswerboost.com">hello@getanswerboost.com</a> or call <a href="tel:+14693988482">(469) 398-8482</a></p>
+    <p>Privacy Policy: <a href="https://getanswerboost.com/privacy-policy">getanswerboost.com/privacy-policy</a></p>
+    <p><strong>Carriers are not liable for delayed or undelivered messages.</strong></p>
 
-    <div class="section" id="s1">
-      <h2>1. Acceptance of Terms</h2>
-      <p>These Terms of Service ("Terms") constitute a legally binding agreement between you ("Client," "you," or "your") and <strong>Geminus Holdings LLC</strong>, a Texas limited liability company doing business as AnswerBoost ("AnswerBoost," "we," "us," or "our").</p>
-      <p>By accessing getanswerboost.com, booking a demo, or using any AnswerBoost service, you confirm that you are at least 18 years of age, have legal authority to enter this agreement on behalf of yourself or your business, and agree to comply with these Terms in full.</p>
-    </div>
-
-    <div class="section" id="s2">
-      <h2>2. Description of Services</h2>
-      <p>AnswerBoost provides automated missed call recovery technology including:</p>
-      <ul>
-        <li>Automated SMS text-back to missed inbound callers</li>
-        <li>AI-powered conversational response handling</li>
-        <li>Appointment booking integrations</li>
-        <li>Voicemail transcription (Pro plan)</li>
-        <li>Related automation and reporting tools</li>
-      </ul>
-      <p>We reserve the right to modify, suspend, or discontinue any aspect of the Service at any time with reasonable notice.</p>
-    </div>
-
-    <div class="section" id="s3">
-      <h2>3. SMS Platform and 10DLC Compliance</h2>
-      <p>AnswerBoost operates as a platform/ISV that enables individual client businesses to send SMS messages to their own customers. Each message is sent on behalf of the registered client business using that client's 10DLC-registered number.</p>
-      <p>All SMS communications through our platform include opt-out language. Recipients may reply <strong>STOP</strong> to immediately unsubscribe. Reply <strong>HELP</strong> for help. Message and data rates may apply.</p>
-      <p>Clients are responsible for ensuring their use of the platform complies with the Telephone Consumer Protection Act (TCPA), CAN-SPAM Act, and all applicable carrier requirements. AnswerBoost will not be liable for client violations of applicable telemarketing or messaging laws.</p>
-      <p><strong>We do not share mobile phone numbers or SMS consent data with third parties for marketing or promotional purposes.</strong> All text messaging originator opt-in data and consent information will not be shared with any third parties.</p>
-    </div>
-
-    <div class="section" id="s4">
-      <h2>4. Account Responsibilities</h2>
-      <p>You are responsible for:</p>
-      <ul>
-        <li>Maintaining confidentiality of account credentials</li>
-        <li>Ensuring all information provided to AnswerBoost is accurate and current</li>
-        <li>All activity that occurs under your account</li>
-        <li>Complying with all applicable laws including the TCPA, CAN-SPAM Act, and state telemarketing laws</li>
-        <li>Obtaining any required consents from your customers before they are contacted through our platform</li>
-      </ul>
-    </div>
-
-    <div class="section" id="s5">
-      <h2>5. Acceptable Use</h2>
-      <p>You agree not to use AnswerBoost to:</p>
-      <ul>
-        <li>Violate any applicable federal, state, or local law or regulation</li>
-        <li>Send spam, unsolicited commercial messages, or harassing communications</li>
-        <li>Contact individuals who have previously opted out or requested no further contact</li>
-        <li>Collect data from individuals without authorization</li>
-        <li>Reverse engineer, decompile, or create derivative works from our proprietary systems</li>
-        <li>Resell or sublicense access to the platform without prior written consent</li>
-      </ul>
-      <p>We reserve the right to suspend or terminate accounts that violate these terms immediately and without refund.</p>
-    </div>
-
-    <div class="section" id="s6">
-      <h2>6. Payment and Billing</h2>
-      <p>Services are billed monthly in advance. The one-time setup fee is due upon signing. Subscription fees are charged on the same calendar date each month to the payment method on file.</p>
-      <p>Current pricing:</p>
-      <ul>
-        <li><strong>Standard:</strong> $597/month + $1,000 one-time setup fee</li>
-        <li><strong>Pro:</strong> $897/month + $1,000 one-time setup fee</li>
-      </ul>
-      <p>Pricing is subject to change with 30 days' written notice to active clients. Continued use of the service after the effective date of a price change constitutes acceptance.</p>
-    </div>
-
-    <div class="section" id="s7">
-      <h2>7. Cancellation and Refunds</h2>
-      <p>You may cancel your subscription at any time by contacting <a href="mailto:hello@getanswerboost.com">hello@getanswerboost.com</a>. Cancellation takes effect at the end of the current billing period — you retain access through that date.</p>
-      <p>No refunds are issued for partial months of service. The one-time setup fee is non-refundable once onboarding has begun.</p>
-      <p>If you believe a charge was made in error, contact us within 30 days of the charge and we will investigate promptly.</p>
-    </div>
-
-    <div class="section" id="s8">
-      <h2>8. Intellectual Property</h2>
-      <p>All content, software, and systems comprising the AnswerBoost platform — including AI models, automation workflows, and response templates — are the property of Geminus Holdings LLC and protected by applicable intellectual property laws.</p>
-      <p>You retain ownership of your business data and customer information. By using the platform, you grant AnswerBoost a limited license to process that data solely to deliver the services described herein.</p>
-    </div>
-
-    <div class="section" id="s9">
-      <h2>9. Disclaimer of Warranties</h2>
-      <div class="warning">
-        <p>THE SERVICE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. ANSWERBOOST DOES NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR THAT ANY SPECIFIC BUSINESS OUTCOME (INCLUDING JOB BOOKINGS OR REVENUE RECOVERY) WILL RESULT FROM USE OF THE SERVICE.</p>
+    <div class="kw-group">
+      <div class="kw-label">Opt-Out</div>
+      <div class="keywords">
+        <div class="kw-chip">STOP</div>
+        <div class="kw-chip">UNSUBSCRIBE</div>
+        <div class="kw-chip">END</div>
+        <div class="kw-chip">QUIT</div>
       </div>
-      <p>To the fullest extent permitted by law, AnswerBoost disclaims all warranties, express or implied, including warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+      <p style="font-size:14px; color:var(--muted); margin-top:8px;"><strong style="color:var(--text)">Reply STOP to cancel.</strong> You will receive one final confirmation message. No further messages will be sent.</p>
     </div>
 
-    <div class="section" id="s10">
-      <h2>10. Limitation of Liability</h2>
-      <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, ANSWERBOOST SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE SERVICE.</p>
-      <p>OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING FROM OR RELATED TO THE SERVICE SHALL NOT EXCEED THE AMOUNT YOU PAID TO ANSWERBOOST IN THE THREE MONTHS PRECEDING THE CLAIM.</p>
+    <div class="kw-group">
+      <div class="kw-label">Help</div>
+      <div class="keywords">
+        <div class="kw-chip">HELP</div>
+        <div class="kw-chip">INFO</div>
+      </div>
+      <p style="font-size:14px; color:var(--muted); margin-top:8px;"><strong style="color:var(--text)">Reply HELP for help.</strong> You will receive our support contact information.</p>
     </div>
-
-    <div class="section" id="s11">
-      <h2>11. Indemnification</h2>
-      <p>You agree to indemnify, defend, and hold harmless Geminus Holdings LLC and its officers, directors, employees, and agents from and against any claims, liabilities, and expenses (including reasonable attorneys' fees) arising from your use of the Service, your violation of these Terms, or your violation of any applicable law — including any TCPA violations resulting from your use of the platform.</p>
-    </div>
-
-    <div class="section" id="s12">
-      <h2>12. Governing Law</h2>
-      <p>These Terms shall be governed by the laws of the State of Texas without regard to its conflict of law provisions. Any disputes shall be resolved first through good-faith negotiation, then if unresolved, in the courts of Dallas County, Texas.</p>
-      <p><strong>Class action waiver:</strong> You agree that any dispute resolution proceedings will be conducted on an individual basis only and not as a class action or class-wide arbitration.</p>
-    </div>
-
-    <div class="section" id="s13">
-      <h2>13. Changes to Terms</h2>
-      <p>We reserve the right to modify these Terms at any time. We will post the updated Terms on this page and update the "Last updated" date. For material changes, active clients will be notified by email with at least 14 days' notice. Continued use of the Service after the effective date constitutes acceptance of the revised Terms.</p>
-    </div>
-
-    <div class="contact-box" id="s14">
-      <h2>14. Contact</h2>
-      <p><strong style="color:#fff">Geminus Holdings LLC dba AnswerBoost</strong></p>
-      <p>Irving, Texas</p>
-      <p>Email: <a href="mailto:hello@getanswerboost.com">hello@getanswerboost.com</a></p>
-      <p>Website: getanswerboost.com</p>
-    </div>
-
   </div>
-</main>
+
+  <div class="section">
+    <div class="section-number">Section 1</div>
+    <h2>Acceptance of Terms</h2>
+    <p>These Terms of Service ("Terms") govern your access to and use of the AnswerBoost website at getanswerboost.com and all related services provided by Geminus Holdings LLC, a Texas limited liability company doing business as AnswerBoost ("Company," "we," "us," or "our").</p>
+    <p>By accessing getanswerboost.com or using any AnswerBoost service, you confirm that you are at least 18 years of age, have the legal authority to enter into this agreement, and agree to comply with these Terms and all applicable laws and regulations.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 2</div>
+    <h2>Description of Services</h2>
+    <p>AnswerBoost provides automated missed call recovery technology for local service businesses, including:</p>
+    <ul class="styled">
+      <li>Automated SMS text-back systems triggered by missed calls</li>
+      <li>AI-powered conversational response to caller inquiries</li>
+      <li>Appointment booking integrations via Google Calendar and similar platforms</li>
+      <li>Call routing, forwarding configuration support, and related automation tools</li>
+    </ul>
+    <p>Specific service details, pricing, and obligations are governed by your signed Client Service Agreement.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 3</div>
+    <h2>Account Responsibilities</h2>
+    <p>You are responsible for:</p>
+    <ul class="styled">
+      <li>Maintaining the confidentiality of your account credentials</li>
+      <li>Ensuring all information provided to us is accurate and current</li>
+      <li>All activity that occurs under your account</li>
+      <li>Complying with all applicable laws including the TCPA, CAN-SPAM Act, and applicable state telecommunications regulations</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 4</div>
+    <h2>Acceptable Use</h2>
+    <p>You agree not to use AnswerBoost to:</p>
+    <ul class="styled">
+      <li>Violate any applicable laws or regulations</li>
+      <li>Send unsolicited messages, spam, or harass any individual</li>
+      <li>Collect personal data without proper authorization or consent</li>
+      <li>Interfere with or disrupt our systems or networks</li>
+      <li>Gain unauthorized access to our services or third-party systems</li>
+      <li>Reverse engineer, decompile, or attempt to extract our proprietary source code or AI configurations</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 5</div>
+    <h2>SMS &amp; Telecommunications Compliance</h2>
+    <p>Client assumes full responsibility for ensuring their use of AnswerBoost complies with the Telephone Consumer Protection Act (TCPA), the CAN-SPAM Act, and all applicable federal, state, and local telecommunications laws and regulations.</p>
+    <p>The AnswerBoost system sends automated SMS messages to individuals who have called the client's business phone number. By subscribing to AnswerBoost, the client represents and warrants that this use case is lawful for their business and jurisdiction.</p>
+    <p>All automated messages include opt-out language. The Company processes STOP requests immediately and permanently. However, the Company cannot guarantee regulatory compliance for every client's specific use case and recommends clients consult legal counsel regarding TCPA compliance.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 6</div>
+    <h2>Payment Terms</h2>
+    <p>All fees are as specified in your Client Service Agreement. Monthly service fees are billed automatically on your renewal date. Failure to pay may result in service suspension after 7 days past due. All setup fees are non-refundable once services have commenced. Refund requests for monthly fees are evaluated at Company's sole discretion.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 7</div>
+    <h2>Intellectual Property</h2>
+    <p>All content, technology, automation workflows, AI prompt configurations, and materials on getanswerboost.com are owned by Geminus Holdings LLC and protected by applicable intellectual property laws. You may not copy, reproduce, distribute, or create derivative works from our proprietary materials without express written permission.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 8</div>
+    <h2>Disclaimer of Warranties</h2>
+    <p class="caps">ANSWERBOOST SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. COMPANY DOES NOT WARRANT THAT SERVICES WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE. COMPANY MAKES NO WARRANTY REGARDING SPECIFIC RESULTS, INCLUDING RECOVERED CALLS, BOOKED APPOINTMENTS, OR REVENUE OUTCOMES. YOUR USE OF THE SERVICE IS AT YOUR SOLE RISK.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 9</div>
+    <h2>Limitation of Liability</h2>
+    <p class="caps">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, GEMINUS HOLDINGS LLC SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, LOST REVENUE, MISSED CALLS, OR LOST BUSINESS OPPORTUNITIES. COMPANY'S TOTAL CUMULATIVE LIABILITY TO YOU SHALL NOT EXCEED THE FEES PAID BY YOU IN THE THREE (3) MONTHS PRECEDING THE CLAIM.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 10</div>
+    <h2>Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless Geminus Holdings LLC, its members, officers, employees, and agents from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your use of the Services, your violation of these Terms, your violation of any applicable law, or any third-party claim related to your use of the AnswerBoost platform.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 11</div>
+    <h2>Privacy</h2>
+    <p>Your use of AnswerBoost is governed by our <a href="https://getanswerboost.com/privacy-policy" style="color:var(--accent)">Privacy Policy</a>. By using our services, you consent to our collection and use of information as described therein. Mobile number opt-in data and consent is not shared with third parties for marketing or promotional purposes.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 12</div>
+    <h2>Modifications</h2>
+    <p>Company may modify these Terms at any time. We will provide notice of material changes via email to the address on file. Continued use of our services after changes are posted constitutes acceptance of the updated Terms.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 13</div>
+    <h2>Termination</h2>
+    <p>Either party may terminate services with 30 days written notice. Company may suspend or terminate access immediately upon material breach including non-payment, misuse, or violation of applicable law. Termination does not relieve you of payment obligations incurred prior to termination.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 14</div>
+    <h2>Governing Law</h2>
+    <p>These Terms are governed by and construed in accordance with the laws of the State of Texas, without regard to conflict of law principles. Any disputes arising under these Terms shall be resolved through binding arbitration in Dallas County, Texas. The prevailing party shall be entitled to recover reasonable attorneys' fees.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 15</div>
+    <h2>Contact</h2>
+    <p>For questions about these Terms or our SMS program:</p>
+    <div class="contact-card">
+      <p><strong style="color:var(--heading)">Geminus Holdings LLC dba AnswerBoost</strong></p>
+      <p>📧 <a href="mailto:hello@getanswerboost.com">hello@getanswerboost.com</a></p>
+      <p>📞 <a href="tel:+14693988482">(469) 398-8482</a></p>
+      <p>🌐 <a href="https://getanswerboost.com">getanswerboost.com</a></p>
+      <p>📍 Dallas, Texas</p>
+    </div>
+  </div>
+
+</div>
 
 <footer>
-  <p class="footer-legal">
-    &copy; 2026 Geminus Holdings LLC dba AnswerBoost. All rights reserved.
-    <a href="/">Home</a>
-    <a href="/privacy-policy">Privacy Policy</a>
-    <a href="/terms">Terms of Service</a>
-  </p>
+  <p>© 2026 Geminus Holdings LLC dba AnswerBoost · <a href="/privacy-policy">Privacy Policy</a> · <a href="/terms">Terms of Service</a> · <a href="/">Home</a></p>
 </footer>
 
 </body>
