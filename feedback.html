@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Share Your Feedback | AnswerBoost</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0b1929;--navy-mid:#112240;--navy-light:#1a3a5c;
+  --gold:#f5a623;--teal:#0fbf8a;
+  --white:#ffffff;--gray-100:#f4f6f9;--gray-200:#e2e8f0;--gray-400:#9aa5b4;--gray-600:#4a5568;--gray-800:#1a202c;
+  --font-display:'Syne',sans-serif;--font-body:'DM Sans',sans-serif;
+  --radius:12px;--radius-pill:100px;
+}
+body{font-family:var(--font-body);background:var(--gray-100);color:var(--gray-800);min-height:100vh;display:flex;flex-direction:column}
+
+/* NAV */
+nav{background:rgba(11,25,41,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.06);padding:0 5%;height:70px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo img{height:48px;width:auto;display:block}
+
+/* MAIN */
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:48px 20px}
+.card{background:var(--white);border-radius:20px;padding:48px 44px;max-width:500px;width:100%;box-shadow:0 4px 24px rgba(0,0,0,0.07);border:1px solid var(--gray-200)}
+
+.eyebrow{font-size:12px;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px}
+h1{font-family:var(--font-display);font-size:26px;font-weight:800;color:var(--navy);letter-spacing:-0.5px;line-height:1.2;margin-bottom:8px}
+.subtitle{font-size:14px;color:var(--gray-600);margin-bottom:32px;line-height:1.6}
+
+/* STARS */
+.stars-wrap{display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:6px;margin-bottom:28px}
+.stars-wrap input{display:none}
+.stars-wrap label{font-size:40px;cursor:pointer;color:#dde2ea;transition:color 0.15s;line-height:1;user-select:none}
+.stars-wrap input:checked ~ label,
+.stars-wrap label:hover,
+.stars-wrap label:hover ~ label{color:var(--gold)}
+
+/* TEXTAREA */
+label.field-label{display:block;font-size:13px;font-weight:500;color:var(--navy);margin-bottom:8px}
+textarea{width:100%;border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:14px;font-family:var(--font-body);font-size:14px;color:var(--gray-800);resize:vertical;min-height:110px;outline:none;transition:border-color 0.2s;line-height:1.6}
+textarea:focus{border-color:var(--teal)}
+textarea::placeholder{color:var(--gray-400)}
+
+/* SUBMIT BTN */
+.btn-submit{display:block;width:100%;margin-top:20px;padding:15px;background:var(--navy);color:var(--white);font-family:var(--font-display);font-size:15px;font-weight:700;border:none;border-radius:var(--radius-pill);cursor:pointer;transition:background 0.2s,transform 0.15s;letter-spacing:0.01em}
+.btn-submit:hover{background:#112240;transform:translateY(-1px)}
+.btn-submit:disabled{opacity:0.55;cursor:not-allowed;transform:none}
+
+.privacy-note{font-size:11px;color:var(--gray-400);text-align:center;margin-top:16px;line-height:1.6}
+
+/* THANK YOU STATE */
+.thanks{display:none;text-align:center;padding:20px 0}
+.thanks-icon{font-size:52px;margin-bottom:16px}
+.thanks h2{font-family:var(--font-display);font-size:24px;font-weight:800;color:var(--navy);margin-bottom:8px}
+.thanks p{font-size:15px;color:var(--gray-600);line-height:1.6}
+
+/* FOOTER */
+footer{background:#060d16;padding:24px 5%}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-left{font-size:13px;color:rgba(255,255,255,0.3)}
+.footer-left strong{color:rgba(255,255,255,0.55);font-weight:500}
+.footer-links{display:flex;gap:20px}
+.footer-links a{font-size:13px;color:rgba(255,255,255,0.35);text-decoration:none}
+.footer-links a:hover{color:rgba(255,255,255,0.7)}
+
+@media(max-width:520px){
+  .card{padding:32px 24px}
+  h1{font-size:22px}
+  .stars-wrap label{font-size:34px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://getanswerboost.com" class="nav-logo">
+    <img src="/logo.png" alt="AnswerBoost">
+  </a>
+</nav>
+
+<main>
+  <div class="card">
+
+    <!-- FORM STATE -->
+    <div id="form-wrap">
+      <div class="eyebrow">Private Feedback</div>
+      <h1>How did we do?</h1>
+      <p class="subtitle">Your feedback goes directly to ownership — not published anywhere. Takes 30 seconds.</p>
+
+      <div class="stars-wrap">
+        <input type="radio" id="s5" name="stars" value="5"><label for="s5" title="5 stars">★</label>
+        <input type="radio" id="s4" name="stars" value="4"><label for="s4" title="4 stars">★</label>
+        <input type="radio" id="s3" name="stars" value="3"><label for="s3" title="3 stars">★</label>
+        <input type="radio" id="s2" name="stars" value="2"><label for="s2" title="2 stars">★</label>
+        <input type="radio" id="s1" name="stars" value="1"><label for="s1" title="1 star">★</label>
+      </div>
+
+      <label class="field-label" for="comment">Tell us about your experience</label>
+      <textarea id="comment" placeholder="What went well? Anything we could improve?"></textarea>
+
+      <button class="btn-submit" onclick="submitFeedback()">Submit Feedback</button>
+
+      <p class="privacy-note">🔒 Private &amp; confidential — goes directly to ownership.<br>Powered by AnswerBoost AI.</p>
+    </div>
+
+    <!-- THANK YOU STATE -->
+    <div class="thanks" id="thanks">
+      <div class="thanks-icon">🙏</div>
+      <h2>Thank you!</h2>
+      <p>Your feedback has been received.<br>We appreciate you taking the time.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">© 2026 <strong>Geminus Holdings LLC</strong> dba AnswerBoost · Dallas, TX</div>
+    <div class="footer-links">
+      <a href="/privacy-policy">Privacy Policy</a>
+      <a href="/terms">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function getParam(name) {
+  return new URLSearchParams(window.location.search).get(name) || '';
+}
+
+function submitFeedback() {
+  var stars   = document.querySelector('input[name="stars"]:checked');
+  var comment = document.getElementById('comment').value.trim();
+  var jobId   = getParam('jobId');
+
+  if (!stars)   { alert('Please select a star rating.'); return; }
+  if (!comment) { alert('Please share a comment before submitting.'); return; }
+
+  var btn = document.querySelector('.btn-submit');
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+
+  var gasUrl = 'https://script.google.com/macros/s/AKfycbzu013Pp811EKN0DxPo937ieYpUdy6g93XRFzxds-XGJErg6eyVdf6CjhwzLyRKovJC6g/exec'
+    + '?path=submit'
+    + '&jobId=' + encodeURIComponent(jobId)
+    + '&stars=' + encodeURIComponent(stars.value)
+    + '&comment=' + encodeURIComponent(comment);
+
+  // GAS Web App requires no-cors GET — fire and forget, show thanks immediately
+  var img = new Image();
+  img.src = gasUrl;
+
+  // Show thank you after 1s regardless (GAS doesn't return CORS headers)
+  setTimeout(function() {
+    document.getElementById('form-wrap').style.display = 'none';
+    document.getElementById('thanks').style.display    = 'block';
+  }, 1000);
+}
+</script>
+
+</body>
+</html>
