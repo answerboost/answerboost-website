@@ -1,2 +1,7 @@
 [build]
   publish = "."
+
+[[redirects]]
+  from = "/book"
+  to = "https://calendar.app.google/fG7fX38xGKspJazbA"
+  status = 302
